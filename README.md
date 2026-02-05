@@ -1,59 +1,31 @@
-# README: Python Sets Study (EXP4)
+## Experiment 4: Study of Set in Python
 
-## Overview
+### Aim
 
-This repository contains a Jupyter Notebook (`Untitled3.ipynb`) documenting **Experiment 4: Study of Set in Python**. The experiment was conducted by **Arhan Nair** to explore the fundamental properties, operations, and practical applications of the `set` and `frozenset` data types in Python.
+To understand and implement the `set` and `frozenset` data structures in Python, exploring their unique properties and performing various set operations.
 
----
+### Theory
 
-## Key Concepts Covered
+* **Definition:** A set is an unordered collection of items where every element is unique (no duplicates) and must be immutable.
+* **Unordered Nature:** Since sets are unordered, the items do not have a defined index, and their order may change every time they are accessed.
+* **Mutability:** Standard sets are mutable, meaning elements can be added or removed using methods like `.add()` and `.remove()`.
+* **Frozenset:** A `frozenset` is an immutable version of a set; once created, its elements cannot be modified.
+* **Set Operations:** Python supports standard mathematical set operations such as Union (), Intersection (), Difference (), and Symmetric Difference ().
 
-### 1. Set Properties
+### Algorithm
 
-* **Unordered:** Sets do not maintain the order of elements.
-* **Unique Elements:** Sets automatically handle and remove duplicate values upon creation or modification.
-* **Mutability:** Standard sets allow adding and removing items.
+1. **Initialization:** Create a set using curly braces `{}` or the `set()` constructor.
+2. **Duplicate Handling:** Observe that duplicate entries are automatically removed during initialization.
+3. **Modification:** Use `.add(element)` to insert a new item and `.remove(element)` to delete an existing one.
+4. **Mathematical Operations:**
+* Apply the pipe operator (`|`) for Union.
+* Apply the ampersand (`&`) for Intersection.
+* Apply the minus sign (`-`) for Difference.
+* Apply the caret (`^`) for Symmetric Difference.
 
-### 2. Core Operations
 
-The notebook demonstrates several built-in Python set operations:
-
-* **Addition/Removal:** Using `.add()`, `.remove()`, and `.discard()`.
-* **Union (`|`):** Combining all unique elements from two sets.
-* **Intersection (`&`):** Identifying elements present in both sets.
-* **Difference (`-`):** Identifying elements present in one set but not the other.
-* **Symmetric Difference (`^`):** Identifying elements that are in either of the sets, but not both.
-
-### 3. Specialized Types
-
-* **Frozensets:** Demonstration of immutable sets that cannot be changed after creation.
-* **Type Casting:** Converting a list with duplicates into a set to extract unique values.
+5. **Immutability:** Define a `frozenset()` to prevent further changes to the collection.
+6. **Output:** Print the results of each operation to verify the logic.
 
 ---
-
-## Practical Examples Included
-
-The notebook applies set logic to real-world scenarios:
-
-* **Course Management:** Removing and discarding courses from a curriculum.
-* **Attendance Tracking:** Calculating absent students by finding the difference between a master list and the present list.
-* **Common Interests:** Finding common subjects among multiple students using multi-set intersection.
-* **Sports Analytics:** Categorizing students who play only cricket, only football, or both.
-
----
-
-## How to Use
-
-1. **Environment:** Open the `.ipynb` file in Google Colab, Jupyter Lab, or VS Code.
-2. **Execution:** Run the cells sequentially to see the output of each set operation.
-3. **Observation:** Note how the output order of sets may change between executions due to their unordered nature.
-
----
-
-## Student Information
-
-* **Name:** Arhan Nair
-* **Roll Number:** 25070123169
-* **Experiment:** EXP4 - Study of Set in Python
-
 
